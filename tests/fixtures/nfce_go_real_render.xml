@@ -1,0 +1,506 @@
+<Map><MESSAGE/><STATUS>SUCCESS</STATUS><PARAMS><DANFE_NFCE_HTML>&lt;div xmlns:r="http://www.serpro.gov.br/nfe/remessanfe.xsd" xmlns:chave="http://exslt.org/chaveacesso" xmlns:n="http://www.portalfiscal.inf.br/nfe" data-role="header">
+&lt;h1 class="tit">
+&lt;img alt="NFC-e" height="64" width="90" src="../resources/images/logoNFCe.png">&lt;p>DOCUMENTO AUXILIAR DA NOTA FISCAL DE CONSUMIDOR ELETR&amp;Ocirc;NICA&lt;/p>
+&lt;p>&lt;/p>
+&lt;/h1>
+&lt;/div>&lt;div data-role="content">
+&lt;div id="conteudo">
+&lt;div id="avisos">&lt;/div>
+&lt;div class="txtCenter">
+&lt;div class="txtTopo" id="u20">SUPERMERCADO EXEMPLO LTDA&lt;/div>
+&lt;div class="text">
+								CNPJ:
+								12.345.678/0001-95&lt;/div>
+&lt;div class="text">RUA EXEMPLO
+							,
+							100
+							,
+							QD 1 LT 1
+							,
+							CENTRO
+							,
+							CIDADE EXEMPLO
+							,
+							GO&lt;/div>
+&lt;/div>
+&lt;table data-filter="true" id="tabResult" cellspacing="0" cellpadding="0" align="center" border="0">
+&lt;tr id="Item + 1">
+&lt;td valign="top">&lt;span class="txtTit">MANTEIGA CAGEL 200G&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898954365268
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										7,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">7,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 2">
+&lt;td valign="top">&lt;span class="txtTit">MANTEIGA CAGEL 200G&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898954365268
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										7,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">7,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 3">
+&lt;td valign="top">&lt;span class="txtTit">PAPEL ALUMINIO WYDA 30CMX7,5M&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898933283033
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										5,89&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">5,89&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 4">
+&lt;td valign="top">&lt;span class="txtTit">PAPEL TOALHA CLARA MAX PREMIUM&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898920699632
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										4,29&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">4,29&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 5">
+&lt;td valign="top">&lt;span class="txtTit">PAPEL TOALHA CLARA MAX PREMIUM&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898920699632
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										4,29&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">4,29&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 6">
+&lt;td valign="top">&lt;span class="txtTit">LEITE ITAMBE 1,150GR FERMEN TRAD&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896051166238
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										15,29&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">15,29&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 7">
+&lt;td valign="top">&lt;span class="txtTit">BEB ENERGETICO BALY 473ML CEREJA ZERO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898080666239
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										5,59&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">5,59&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 8">
+&lt;td valign="top">&lt;span class="txtTit">BEB ENERGETICO BALY 473ML REDRAGON ZERO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898080665898
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										5,59&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">5,59&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 9">
+&lt;td valign="top">&lt;span class="txtTit">MOLHO AJINOSHOYU DAV 150ML&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896007811021
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										4,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">4,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 10">
+&lt;td valign="top">&lt;span class="txtTit">QUEIJO MUSSARELA ITAMBE 150G&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896051165446
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>KG&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										8,39&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">8,39&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 11">
+&lt;td valign="top">&lt;span class="txtTit">MISTURA BOLO FLEISCHMANN 390G CHOCOLATE&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7897309408575
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										9,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">9,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 12">
+&lt;td valign="top">&lt;span class="txtTit">CREME DE LEITE 200GR ITALAC&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898080640222
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,19&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,19&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 13">
+&lt;td valign="top">&lt;span class="txtTit">CREME DE LEITE 200GR ITALAC&lt;/span&gt;&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898080640222
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,19&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,19&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 14">
+&lt;td valign="top">&lt;span class="txtTit">LEITE CONDENSADO 395G ITALAC&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898080640413
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										4,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">4,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 15">
+&lt;td valign="top">&lt;span class="txtTit">SUCO AURORA 1,5LT UVA TINTO INTEGRAL TP&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7891141036170
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										13,89&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">13,89&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 16">
+&lt;td valign="top">&lt;span class="txtTit">BEB DEL VALLE 1LT MARACUJA&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898341430074
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										7,19&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">7,19&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 17">
+&lt;td valign="top">&lt;span class="txtTit"&gt;PAO DE QUEIJO DA VOVO 700G&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898967282897
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										8,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">8,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 18">
+&lt;td valign="top">&lt;span class="txtTit">PAO DE QUEIJO DA VOVO 700G&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898967282897
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										8,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">8,99&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 19">
+&lt;td valign="top">&lt;span class="txtTit">DETERGENTE YPE 500ML NEUTRO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896098900208
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,79&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,79&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 20">
+&lt;td valign="top">&lt;span class="txtTit">DETERGENTE YPE 500ML NEUTRO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896098900208
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,79&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,79&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 21">
+&lt;td valign="top">&lt;span class="txtTit">DETERGENTE YPE 500ML NEUTRO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896098900208
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,79&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,79&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 22">
+&lt;td valign="top">&lt;span class="txtTit">DETERGENTE YPE 500ML CLEAR&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7896098900253
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										2,79&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">2,79&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 23">
+&lt;td valign="top">&lt;span class="txtTit">LAVA ROUPAS TUFF 3LT CONCENTRADO SUBLIME&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7897534860148
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										23,79&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">23,79&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 24">
+&lt;td valign="top">&lt;span class="txtTit">PAPEL HIG CLARA FD 12X1 PREMIUM NEUTRO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7898920700307
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										13,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">13,99&lt;/span>&lt;/td&gt;
+&lt;/tr>
+&lt;tr id="Item + 25">
+&lt;td valign="top">&lt;span class="txtTit">ALFACE PALITO&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										277
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										7,49&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">7,49&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 26">
+&lt;td valign="top">&lt;span class="txtTit">TOMATE KG&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										2110
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>0,57&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>KG&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										9,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">5,69&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 27">
+&lt;td valign="top">&lt;span class="txtTit">ED JOHNSONS GRANDE MEDIA 4&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										7891010041366
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>1&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>UN&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										13,29&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">13,29&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 28">
+&lt;td valign="top">&lt;span class="txtTit">PEPINO JAPONES KG&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										213547
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>0,21&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>KG&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										5,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">1,26&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;tr id="Item + 29">
+&lt;td valign="top">&lt;span class="txtTit">BATATINHA KG&lt;/span>&lt;span class="RCod">
+										(C&amp;oacute;digo:
+										154
+										)
+									&lt;/span>
+&lt;br>
+&lt;span class="Rqtd">&lt;strong>Qtde.:&lt;/strong>0,75&lt;/span>&lt;span class="RUN">&lt;strong>UN: &lt;/strong>KG&lt;/span>&lt;span class="RvlUnit">&lt;strong>Vl. Unit.:&lt;/strong>
+										&amp;nbsp;
+										6,99&lt;/span>&lt;/td>&lt;td class="txtTit noWrap" valign="top" align="right">
+									Vl. Total
+									&lt;br>
+&lt;span class="valor">5,24&lt;/span>&lt;/td>
+&lt;/tr>
+&lt;/table>
+&lt;div class="txtRight" id="totalNota">
+&lt;div id="linhaTotal">
+&lt;label>Qtd. total de itens:&lt;/label>&lt;span class="totalNumb">29&lt;/span>
+&lt;/div>
+&lt;div class="linhaShade" id="linhaTotal">
+&lt;label>Valor a pagar R$:&lt;/label>&lt;span class="totalNumb txtMax">210,63&lt;/span>
+&lt;/div>
+&lt;div id="linhaForma">
+&lt;label>Forma de pagamento:&lt;/label>&lt;span class="totalNumb txtTitR">Valor pago R$:&lt;/span>
+&lt;/div>
+&lt;div id="linhaTotal">
+&lt;label class="tx">
+											Cart&amp;atilde;o de D&amp;eacute;bito
+										&lt;/label>&lt;span class="totalNumb">210,63&lt;/span>
+&lt;/div>
+&lt;div id="linhaTotal">
+&lt;label class="tx">Troco &lt;/label>&lt;span class="totalNumb">NaN&lt;/span>
+&lt;/div>
+&lt;div class="spcTop" id="linhaTotal">
+&lt;label class="txtObs">Informa&amp;ccedil;&amp;atilde;o dos Tributos Totais Incidentes
+									(Lei Federal 12.741/2012)&amp;nbsp;R$&lt;/label>&lt;span class="totalNumb txtObs">17,17&lt;/span>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="txtCenter" id="infos">
+&lt;div data-collapsed="false" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-role="collapsible">
+&lt;h4>Informa&amp;ccedil;&amp;otilde;es gerais da Nota&lt;/h4>
+&lt;ul data-inset="false" data-role="listview">
+&lt;li>
+&lt;strong>EMITIDA EM CONTING&amp;Ecirc;NCIA&lt;/strong>
+&lt;br>
+&lt;br>
+&lt;strong>N&amp;uacute;mero: &lt;/strong>40089&lt;strong> S&amp;eacute;rie: &lt;/strong>110&lt;strong> Emiss&amp;atilde;o: &lt;/strong>15/01/2026 10:20:30
+								- Via Consumidor
+								&lt;br>
+&lt;br>
+&lt;strong>Protocolo de Autoriza&amp;ccedil;&amp;atilde;o: &lt;/strong>152260000000001       15/01/2026 10:21:05&lt;br>
+&lt;br>
+&lt;strong>
+										Ambiente de Produ&amp;ccedil;&amp;atilde;o -
+									
+									Vers&amp;atilde;o XML:
+									4.00
+									- Vers&amp;atilde;o XSLT: 2.05
+								&lt;/strong>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div data-collapsed="false" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-role="collapsible">
+&lt;h4>Chave de acesso&lt;/h4>
+&lt;ul data-inset="false" data-role="listview">
+&lt;li>
+								Consulte pela Chave de Acesso em
+								
+								www.sefaz.go.gov.br/nfce/consulta&lt;br>
+&lt;br>
+&lt;strong>Chave de acesso:&lt;/strong>
+&lt;br>
+&lt;span class="chave">5226 0112 3456 7800 0195 6511 0000 0400 8990 0085 7068&lt;/span>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div data-collapsed="false" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-role="collapsible">
+&lt;h4>Consumidor&lt;/h4>
+&lt;ul data-inset="false" data-role="listview">
+&lt;li>
+&lt;strong>Consumidor n&amp;atilde;o identificado&lt;/strong>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+</DANFE_NFCE_HTML><VERSION>2.05</VERSION></PARAMS></Map>

@@ -1,0 +1,34 @@
+# Segredos — nunca versionar
+.env
+.env.*
+!.env.example
+firebase_credentials.json
+*credentials*.json
+*-firebase-adminsdk-*.json
+serviceAccount*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Vercel
+.vercel/
+
+# App antigo
+_legacy/
+
+# arquivo de apoio para colar as variáveis no Vercel
+vercel-env.local.txt
+
+.vercel
+.env*
+
+# local
+.claude/
+nfce-scanner-integracao.zip
+*.zip
+
+# dados pessoais de caixa (nao versionar)
+dados/

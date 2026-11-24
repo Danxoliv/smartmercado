@@ -1,0 +1,13 @@
+.env
+.env.*
+firebase_credentials.json
+.venv
+_legacy
+tests
+__pycache__
+.pytest_cache
+vercel-env.local.txt
+.claude
+integracao
+
+dados

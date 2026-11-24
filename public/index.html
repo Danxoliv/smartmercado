@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SmartMercado</title>
+  <meta name="description" content="Controle pessoal de compras de supermercado com NFC-e de Goiás">
+  <meta name="theme-color" content="#00875a">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/vendor/html5-qrcode.min.js" defer></script>
+  <script src="/app.js" defer></script>
+  <script src="/graficos.js" defer></script>
+  <script src="/caixa.js" defer></script>
+</head>
+<body>
+  <!-- PIN -->
+  <section id="tela-pin" class="tela-pin" hidden>
+    <img src="/icons/icon-192.png" alt="" width="72" height="72">
+    <h1>SmartMercado</h1>
+    <form id="form-pin" autocomplete="off">
+      <label for="pin">PIN de acesso</label>
+      <input id="pin" type="password" inputmode="numeric" autocomplete="current-password" required>
+      <button type="submit" class="btn">Entrar</button>
+      <p id="pin-erro" class="erro" role="alert"></p>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <header class="topo">
+      <h1 id="titulo">Scanner</h1>
+      <button id="btn-sair" class="btn-icone" type="button" aria-label="Sair">Sair</button>
+    </header>
+
+    <main>
+      <!-- ESCANEAR -->
+      <section id="aba-escanear" class="aba ativa">
+        <div class="card">
+          <h2>QR Code da NFC-e</h2>
+          <p class="sub">Aponte a câmera para o QR Code no rodapé do cupom, a uns 15 cm e com boa luz.</p>
+          <div id="leitor" class="leitor" hidden></div>
+          <button id="btn-scan" class="btn" type="button">Abrir câmera</button>
+          <button id="btn-scan-parar" class="btn btn-sec" type="button" hidden>Fechar câmera</button>
+          <label class="btn btn-sec" for="foto-qr">Não focou? Ler QR de uma foto</label>
+          <input id="foto-qr" type="file" accept="image/*" capture="environment" hidden>
+          <div id="leitor-oculto" hidden></div>
+        </div>
+
+        <div class="card">
+          <h2>Foto do cupom</h2>
+          <p class="sub">Use quando o QR Code não funcionar. A foto é comprimida antes do envio.</p>
+          <label class="btn btn-sec" for="foto">Tirar / escolher foto</label>
+          <input id="foto" type="file" accept="image/*" capture="environment" hidden>
+        </div>
+
+        <div class="card">
+          <h2>XML da nota</h2>
+          <p class="sub">NF-e ou NFC-e de qualquer loja, baixada do portal (arquivo .xml).</p>
+          <label class="btn btn-sec" for="xml">Escolher XML</label>
+          <input id="xml" type="file" accept=".xml,text/xml,application/xml" hidden>
+        </div>
+
+        <details class="card">
+          <summary>Colar link da NFC-e</summary>
+          <form id="form-link" class="linha-form">
+            <input id="link" type="url" inputmode="url" placeholder="https://nfeweb.sefaz.go.gov.br/..." required>
+            <button class="btn" type="submit">Ler</button>
+          </form>
+        </details>
+      </section>
+
+      <!-- REVISÃO -->
+      <section id="aba-revisao" class="aba">
+        <div class="card">
+          <div class="campo">
+            <label for="rev-mercado">Estabelecimento</label>
+            <input id="rev-mercado" type="text" maxlength="200" required>
+          </div>
+          <div class="grade2">
+            <div class="campo">
+              <label for="rev-data">Data</label>
+              <input id="rev-data" type="datetime-local" required>
+            </div>
+            <div class="campo">
+              <label for="rev-total">Valor pago (R$)</label>
+              <input id="rev-total" type="number" inputmode="decimal" step="0.01" min="0" required>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="rev-chave">Chave de acesso (44 dígitos; deixe vazia se o cupom não for fiscal)</label>
+            <input id="rev-chave" type="text" inputmode="numeric" maxlength="60">
+          </div>
+          <p id="rev-resumo" class="sub"></p>
+        </div>
+        <p id="rev-aviso" class="aviso" role="status" hidden></p>
+        <ul id="rev-itens" class="itens"></ul>
+        <div class="barra-acoes">
+          <button id="btn-cancelar" class="btn btn-sec" type="button">Cancelar</button>
+          <button id="btn-salvar" class="btn" type="button">Salvar compra</button>
+        </div>
+      </section>
+
+      <!-- PAINEL -->
+      <section id="aba-painel" class="aba">
+        <div class="linha-form">
+          <label class="sr" for="mes">Mês</label>
+          <input id="mes" type="month">
+          <button id="btn-csv-mes" class="btn btn-sec" type="button">CSV do mês</button>
+        </div>
+        <div class="card destaque">
+          <span class="sub">Gasto no mês</span>
+          <strong id="p-total" class="valor-grande">—</strong>
+          <span id="p-qtd" class="sub"></span>
+          <span id="p-var" class="pill" hidden></span>
+        </div>
+        <div class="card"><h2>Evolução (6 meses)</h2><div id="p-evol" class="evol"></div></div>
+        <div class="card"><h2>Categorias: mês vs. anterior</h2><ul id="p-comp" class="barras"></ul></div>
+        <div class="card"><h2>Por categoria</h2><div id="p-donut" class="donut"></div><ul id="p-cat" class="legenda"></ul></div>
+        <div class="card"><h2>Por mercado</h2><ul id="p-mercado" class="barras"></ul></div>
+        <div class="card"><h2>Compras</h2><ul id="p-compras" class="lista"></ul></div>
+        <button id="btn-csv-tudo" class="btn btn-sec" type="button">Exportar tudo (CSV)</button>
+      </section>
+
+      <!-- CAIXA: saldos, projeção, parcelas e lançamentos -->
+      <section id="aba-caixa" class="aba">
+        <div class="segmentos" role="group" aria-label="Seções do caixa">
+          <button type="button" data-sub="saldos" class="ativo">Saldos</button>
+          <button type="button" data-sub="projecao">Projeção</button>
+          <button type="button" data-sub="parcelas">Parcelas</button>
+          <button type="button" data-sub="lancamentos">Lançamentos</button>
+        </div>
+
+        <div id="cx-saldos" class="sub-aba ativa">
+          <div class="linha-form"><label class="sr" for="cx-mes">Mês</label><select id="cx-mes"></select></div>
+          <div id="cx-kpis" class="kpis"></div>
+          <div class="card"><h2>Saldo dia a dia</h2><div id="cx-linha" class="grafico"></div></div>
+          <div class="card"><h2>Como o mês se compõe</h2><table class="tabela"><tbody id="cx-tabela-mes"></tbody></table></div>
+          <form id="form-config-caixa" class="card">
+            <h2>Saldo inicial</h2>
+            <div class="grade2">
+              <div class="campo"><label for="cx-saldo">Saldo (R$)</label><input id="cx-saldo" type="number" step="0.01" required></div>
+              <div class="campo"><label for="cx-data-saldo">Em</label><input id="cx-data-saldo" type="date" required></div>
+            </div>
+            <button class="btn btn-sec" type="submit">Salvar saldo inicial</button>
+          </form>
+        </div>
+
+        <div id="cx-projecao" class="sub-aba">
+          <p id="cx-resumo-12" class="sub"></p>
+          <div class="card"><h2>Sobra ou falta por mês</h2><div id="cx-barras" class="grafico"></div></div>
+          <div class="card"><h2>Saldo em 12 meses</h2><div id="cx-linha-12" class="grafico"></div></div>
+          <div class="card tabela-rolavel">
+            <table class="tabela compacta">
+              <thead><tr><th>Mês</th><th class="num">Entradas</th><th class="num">Custo vida</th><th class="num">Sobra</th><th class="num">Saldo</th></tr></thead>
+              <tbody id="cx-tabela-12"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="cx-parcelas" class="sub-aba">
+          <p id="cx-parcelas-total" class="sub"></p>
+          <ul id="cx-parcelas-lista" class="barras card"></ul>
+        </div>
+
+        <div id="cx-lancamentos" class="sub-aba">
+          <form id="form-lanc" class="card">
+            <h2>Novo lançamento</h2>
+            <div class="grade2">
+              <div class="campo"><label for="l-tipo">Tipo</label>
+                <select id="l-tipo" name="tipo"><option value="entrada">Entrada</option><option value="saida">Saída</option><option value="diario" selected>Diário</option><option value="economia">Economia</option><option value="cartao">Cartão</option></select></div>
+              <div class="campo"><label for="l-valor">Valor (R$)</label><input id="l-valor" name="valor" type="number" inputmode="decimal" step="0.01" min="0.01" required></div>
+            </div>
+            <div class="campo"><label for="l-nome">Nome</label><input id="l-nome" name="nome" type="text" maxlength="120" required></div>
+            <div class="grade2">
+              <div class="campo"><label for="l-data">Data (1ª ocorrência)</label><input id="l-data" name="data" type="date" required></div>
+              <div class="campo"><label for="l-rec">Repete</label>
+                <select id="l-rec" name="recorrencia"><option value="unica">Única</option><option value="mensal">Todo mês</option><option value="diaria">Todo dia</option><option value="semanal">Toda semana</option><option value="anual">Todo ano</option></select></div>
+            </div>
+            <div class="grade2">
+              <div class="campo"><label for="l-pt">Parcelas (total)</label><input id="l-pt" name="parcelas_total" type="number" inputmode="numeric" min="1" max="600"></div>
+              <div class="campo"><label for="l-pa">Parcela desta data</label><input id="l-pa" name="parcela_atual" type="number" inputmode="numeric" min="1" max="600"></div>
+            </div>
+            <button id="btn-lanc" class="btn" type="submit">Adicionar</button>
+            <button id="btn-lanc-cancelar" class="btn btn-sec" type="button" hidden>Cancelar edição</button>
+          </form>
+          <div class="card"><h2>Lançamentos</h2><ul id="cx-lista" class="lista"></ul></div>
+          <div class="card">
+            <h2>Importar lançamentos</h2>
+            <p class="sub">Arquivo JSON ou CSV. Importar de novo não duplica nada.</p>
+            <label class="campo-check"><input id="cx-sincronizar" type="checkbox"> Remover os lançamentos importados que não estão no arquivo</label>
+            <label class="btn btn-sec" for="cx-importar">Escolher arquivo</label>
+            <input id="cx-importar" type="file" accept=".json,.csv,application/json,text/csv" hidden>
+          </div>
+        </div>
+      </section>
+
+      <!-- DADOS: tabela de consulta das compras salvas -->
+      <section id="aba-dados" class="aba">
+        <div class="linha-form">
+          <label class="sr" for="dmes">Mês</label>
+          <input id="dmes" type="month">
+          <label class="sr" for="dfiltro">Filtrar</label>
+          <input id="dfiltro" type="search" placeholder="Filtrar produto ou estabelecimento">
+        </div>
+        <div class="linha-form">
+          <label class="sr" for="dcat">Categoria</label>
+          <select id="dcat"><option value="">Todas as categorias</option></select>
+        </div>
+        <p id="d-resumo" class="sub"></p>
+        <div class="tabela-rolavel">
+          <table class="tabela">
+            <thead><tr><th>Produto</th><th class="num">Qtd</th><th class="num">Unit.</th><th class="num">Total</th></tr></thead>
+            <tbody id="d-corpo"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- COMPARAR -->
+      <section id="aba-comparar" class="aba">
+        <form id="form-busca" class="linha-form" role="search">
+          <label class="sr" for="busca">Produto</label>
+          <input id="busca" type="search" placeholder="Ex.: arroz 5kg, leite, 789…" minlength="2" required>
+          <button class="btn" type="submit">Buscar</button>
+        </form>
+        <div id="resultados"></div>
+      </section>
+    </main>
+
+    <nav class="nav" aria-label="Navegação">
+      <button type="button" data-aba="escanear" class="ativo">Scanner</button>
+      <button type="button" data-aba="painel">Início</button>
+      <button type="button" data-aba="caixa">Caixa</button>
+      <button type="button" data-aba="dados">Dados</button>
+      <button type="button" data-aba="comparar">Comparar</button>
+    </nav>
+  </div>
+
+  <div id="sugestao" class="modal" role="dialog" aria-modal="true" aria-labelledby="sug-titulo" hidden>
+    <div class="modal-corpo">
+      <h2 id="sug-titulo">Lançar no caixa?</h2>
+      <p id="sug-texto"></p>
+      <button id="sug-diario" class="btn" type="button">Diário</button>
+      <button id="sug-cartao" class="btn btn-sec" type="button">Cartão</button>
+      <button id="sug-pular" class="btn btn-sec" type="button">Pular</button>
+    </div>
+  </div>
+
+  <div id="carregando" class="carregando" hidden>
+    <div class="spinner" aria-hidden="true"></div>
+    <p id="carregando-msg">Processando…</p>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+{
+  "_aviso": "Dados FICTÍCIOS para testes do caixa. Os totais mensais (ent, sai, dia, eco, car, fin) foram calculados por aritmética de mês, sem o motor de projeção.",
+  "inicio": "2026-10-01",
+  "saldo_inicial": 500.0,
+  "meses": [
+    "2026-10",
+    "2026-11",
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04",
+    "2027-05",
+    "2027-06",
+    "2027-07",
+    "2027-08",
+    "2027-09"
+  ],
+  "ent": [
+    3800,
+    4650,
+    4450,
+    3650,
+    3650,
+    3650,
+    3650,
+    3650,
+    3650,
+    3650,
+    3650,
+    3650
+  ],
+  "sai": [
+    1959,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499,
+    1499
+  ],
+  "dia": [
+    525.0,
+    1050.0,
+    1085.0,
+    1085.0,
+    980.0,
+    1085.0,
+    1050.0,
+    1085.0,
+    1050.0,
+    1085.0,
+    1085.0,
+    1050.0
+  ],
+  "eco": [
+    0,
+    0,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300
+  ],
+  "car": [
+    910.5,
+    730.5,
+    730.5,
+    610.5,
+    460,
+    400,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "fin": [
+    905.5,
+    2276.0,
+    3111.5,
+    3267.0,
+    3678.0,
+    4044.0,
+    4845.0,
+    5611.0,
+    6412.0,
+    7178.0,
+    7944.0,
+    8745.0
+  ],
+  "lancamentos": [
+    {
+      "tipo": "entrada",
+      "nome": "Salário",
+      "valor": 2500,
+      "data": "2026-10-05",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "entrada",
+      "nome": "Adiantamento",
+      "valor": 900,
+      "data": "2026-10-20",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "entrada",
+      "nome": "Vale alimentação",
+      "valor": 250,
+      "data": "2026-10-10",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "entrada",
+      "nome": "Venda avulsa",
+      "valor": 150,
+      "data": "2026-10-12",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "entrada",
+      "nome": "Extra de novembro",
+      "valor": 1000,
+      "data": "2026-11-30",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "entrada",
+      "nome": "Extra de dezembro",
+      "valor": 800,
+      "data": "2026-12-30",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Aluguel",
+      "valor": 600,
+      "data": "2026-10-01",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Parcela do carro",
+      "valor": 540,
+      "data": "2026-10-03",
+      "recorrencia": "mensal",
+      "origem": "importado",
+      "parcela_atual": 1,
+      "parcelas_total": 36,
+      "grupo_parcela": "carro",
+      "tag": "PARCELA CARRO"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Energia",
+      "valor": 180,
+      "data": "2026-10-07",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Água",
+      "valor": 80,
+      "data": "2026-10-08",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Internet",
+      "valor": 99,
+      "data": "2026-10-09",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Dentista",
+      "valor": 250,
+      "data": "2026-10-02",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Presente",
+      "valor": 120,
+      "data": "2026-10-06",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "saida",
+      "nome": "Pizza",
+      "valor": 90,
+      "data": "2026-10-15",
+      "recorrencia": "unica",
+      "origem": "importado"
+    },
+    {
+      "tipo": "diario",
+      "nome": "Diário (estimativa)",
+      "valor": 35.0,
+      "data": "2026-10-17",
+      "recorrencia": "diaria",
+      "origem": "importado"
+    },
+    {
+      "tipo": "economia",
+      "nome": "Poupança",
+      "valor": 300,
+      "data": "2026-12-05",
+      "recorrencia": "mensal",
+      "origem": "importado"
+    },
+    {
+      "tipo": "cartao",
+      "nome": "Compra 6x",
+      "valor": 400,
+      "data": "2026-10-12",
+      "recorrencia": "mensal",
+      "origem": "importado",
+      "parcela_atual": 1,
+      "parcelas_total": 6,
+      "grupo_parcela": "compra-6x"
+    },
+    {
+      "tipo": "cartao",
+      "nome": "Compra 4x",
+      "valor": 150.5,
+      "data": "2026-10-12",
+      "recorrencia": "mensal",
+      "origem": "importado",
+      "parcela_atual": 1,
+      "parcelas_total": 4,
+      "grupo_parcela": "compra-4x"
+    },
+    {
+      "tipo": "cartao",
+      "nome": "Compra 2x",
+      "valor": 120,
+      "data": "2026-11-12",
+      "recorrencia": "mensal",
+      "origem": "importado",
+      "parcela_atual": 1,
+      "parcelas_total": 2,
+      "grupo_parcela": "compra-2x"
+    },
+    {
+      "tipo": "cartao",
+      "nome": "Compra 5x",
+      "valor": 60,
+      "data": "2026-10-12",
+      "recorrencia": "mensal",
+      "origem": "importado",
+      "parcela_atual": 1,
+      "parcelas_total": 5,
+      "grupo_parcela": "compra-5x"
+    },
+    {
+      "tipo": "cartao",
+      "nome": "Cartão avulso de outubro",
+      "valor": 300,
+      "data": "2026-10-14",
+      "recorrencia": "unica",
+      "origem": "importado"
+    }
+  ]
+}

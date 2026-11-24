@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>NFC-e</title>
+<script>var x = "Valor a pagar R$: 999,99";</script></head>
+<body>
+<div data-role="page" id="pageDanfe">
+ <div data-role="content" id="conteudo">
+  <div class="txtCenter">
+   <div id="u20" class="txtTopo">SUPERMERCADO EXEMPLO LTDA</div>
+   <div class="text">CNPJ: 12.345.678/0001-95</div>
+   <div class="text">AV T-63, 1000, SETOR BUENO, GOIANIA, GO</div>
+  </div>
+  <table data-filter="true" id="tabResult" cellspacing="0" cellpadding="0" border="0" align="center">
+   <tr id="Item + 1">
+    <td valign="top"><span class="txtTit">ARROZ  TIO JOAO T1 5KG</span><span class="RCod">(Código: 7893500018322 )</span><br>
+     <span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>UN</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>&nbsp;27,99</span></td>
+    <td align="right" valign="top" class="txtTit noWrap">Vl. Total<br><span class="valor">27,99</span></td>
+   </tr>
+   <tr id="Item + 2">
+    <td valign="top"><span class="txtTit">REFRIG. COCA-COLA PET 2L</span><span class="RCod">(Código: 7894900011517 )</span><br>
+     <span class="Rqtd"><strong>Qtde.:</strong>1</span><span class="RUN"><strong>UN: </strong>UN</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>&nbsp;10,99</span></td>
+    <td align="right" valign="top" class="txtTit noWrap">Vl. Total<br><span class="valor">10,99</span></td>
+   </tr>
+   <tr id="Item + 3">
+    <td valign="top"><span class="txtTit">BANANA PRATA KG</span><span class="RCod">(Código: 2001 )</span><br>
+     <span class="Rqtd"><strong>Qtde.:</strong>1,235</span><span class="RUN"><strong>UN: </strong>KG</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>&nbsp;5,99</span></td>
+    <td align="right" valign="top" class="txtTit noWrap">Vl. Total<br><span class="valor">7,40</span></td>
+   </tr>
+   <tr id="Item + 4">
+    <td valign="top"><span class="txtTit">DET YPE NEUTRO 500ML</span><span class="RCod">(Código: 12345 )</span><br>
+     <span class="Rqtd"><strong>Qtde.:</strong>2</span><span class="RUN"><strong>UN: </strong>un</span><span class="RvlUnit"><strong>Vl. Unit.:</strong>&nbsp;2,49</span></td>
+    <td align="right" valign="top" class="txtTit noWrap">Vl. Total<br><span class="valor">4,98</span></td>
+   </tr>
+  </table>
+  <div id="totalNota" class="txtRight">
+   <div id="linhaTotal"><label>Qtd. total de itens:</label><span class="totalNumb">4</span></div>
+   <div id="linhaTotal"><label>Valor total R$:</label><span class="totalNumb">51,36</span></div>
+   <div id="linhaTotal"><label>Descontos R$:</label><span class="totalNumb">1,00</span></div>
+   <div id="linhaTotal" class="linhaShade"><label>Valor a pagar R$:</label><span class="totalNumb txtMax">50,36</span></div>
+   <div id="linhaForma"><label>Forma de pagamento:</label><span class="totalNumb txtTitR">Valor pago R$:</span></div>
+   <div id="linhaTotal"><label class="tx">Cartão de Débito</label><span class="totalNumb">50,36</span></div>
+  </div>
+ </div>
+ <div data-role="collapsible" id="infos">
+  <h4>Informações gerais da Nota</h4>
+  <ul data-role="listview"><li>
+   <strong>Modelo: </strong>65 <strong>Série: </strong>1 <strong>Número: </strong>12345
+   <strong>Emissão: </strong>09/10/2026 13:45:12-03:00 - Via Consumidor
+  </li></ul>
+  <h4>Chave de acesso</h4>
+  <ul data-role="listview"><li><span class="chave">5226 1012 3456 7800 0195 6500 1000 0123 4518 7654 3212</span></li></ul>
+ </div>
+</div>
+</body>
+</html>
